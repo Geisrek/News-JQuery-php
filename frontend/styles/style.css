@@ -1,0 +1,39 @@
+#news_list{
+    list-style: none;
+}
+.new{
+    width: 40%;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius: 10px;
+   
+}
+.new>div>div{
+    background-color: rgb(19, 71, 240);
+    justify-content: space-between;
+    border-radius: 7px 7px 0px 0px;
+    padding: 5px;
+
+}
+.new>div>p{
+    margin: 5px;
+}
+#news_form{
+    width: 50vh;
+    height: 40vh;
+}
+#news_form>input{
+    height: 1.5em;
+    border-radius: 0.5em;
+}
+#news_form>button{
+    height: 2em;
+    width: 30%;
+    cursor: pointer;
+}
+#news_list::-webkit-scrollbar{
+    display: none;
+}
+#news_list{
+    overflow-y: scroll;
+}

@@ -20,6 +20,33 @@ $("#news_list").append(news.join(''))
 .catch(err=>console.log(err))
 
 news_form.on("submit",()=>{
+    const title=$("#title").val();
     const news=$("#news").val();
-    $("#news_list").append()
+    const formData= new FormData();
+    formData.append("title",title)
+    formData.append("news",news)
+    if (title!='' && news !=''){
+    $("#news_list").append(`<li><div class="to-column Gap">
+    <div class="flex-items">
+    <h1>${title}</h1><span>${new Date()}</span></div>
+     <p>${news}</p>
+    </div></li>`);
+
+    fetch(post_news,{
+        method:"POST",
+        body:formData
+    })
+    .then(res=>res.json())
+    .then(res=>{
+    const news=res.map(el=>{
+        const {news_title,news_text,date}=el;
+        return(`<li><div class="to-column Gap">
+        <div class="flex-items">
+        <h1>${news_title}</h1><span>${date}</span></div>
+         <p>${news_text}</p>
+        </div></li>`)
+    })
+})
+}
+
 });

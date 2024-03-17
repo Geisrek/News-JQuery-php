@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./frontend/styles/My-tools/styles/layouts.css">
+    <link rel="stylesheet" href="./frontend/styles/style.css">
 </head>
 <body>
-     <section class="flex-items">
-        <div class="to-column">
-            <ul id="news_list"></ul>
-        </div>
+     <section class="to-column mid">
+        
         <div >
-            <form  id="news_form" class=" to-column" >
+            <form  id="news_form" class=" to-column Gap " >
                 <h1>News title</h1>
-                <input type="text" name="" id="title">
+                <input type="text" name="" id="title" required>
                 <span>What happening</span>
-                <input type="text" name="" id="news">
+                <input type="text" name="" id="news" required>
                 <button type="submit">
                     Post news
                 </button>
             </form>
+        </div>
+        <div class="flex-items news-container mid">
+            <ul id="news_list" class="mid to-column"><li class="new"><div class="to-column Gap ">
+                <div class="flex-items mid-Y">
+                <h1>title</h1><span> Date</span></div>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quibusdam debitis assumenda nostrum molestiae deserunt. Nobis quis, vel nemo animi ex, dicta, facilis molestias deserunt ipsa quam reprehenderit maxime.</p>
+                </li></ul>
         </div>
      </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
