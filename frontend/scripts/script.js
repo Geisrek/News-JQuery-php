@@ -1,7 +1,7 @@
 const news_form=$("#news_form");
 const get_news_api="../../php scripts/getnews.php";
-const post_news="../../php scripts/createnews.php "
-
+const post_news="../../php scripts/createnews.php ";
+//im still suffer from the same error from last assignment so i implement this assignment without see results :')
 fetch(get_news_api,{
     method:"GET"
 })

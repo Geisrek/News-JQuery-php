@@ -35,5 +35,60 @@
     display: none;
 }
 #news_list{
+    height: 100vh;
+  
     overflow-y: scroll;
+}
+#news_form_2{
+   height: 30%;
+   width: 100%;
+   align-items: end;
+}
+#news_form_2>div>input{
+    height: 1.5em;
+    border-radius: 0.5em;
+}
+#news_form_2>div{
+  
+ }
+#news_form_2>button{
+    
+    height: 2em;
+    width: 10%;
+    cursor: pointer;
+}
+.footer{
+    display: none;
+    background-color: rgb(19, 71, 240);
+   
+}
+@media (max-width:700px) {
+    .footer{
+        display: block;
+        background-color: rgb(19, 71, 240);
+       
+    }
+    #news_form{
+        display: none;
+    }
+    #news_form_2{
+        flex-direction: row;
+    }
+    #news_list{
+        height: 70vh;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    section{
+        overflow-x: scroll;
+    }
+    .new{
+        width: 70vh;
+    }
+    #news_form_2>button{
+    
+        height: 2em;
+        width: 20%;
+        cursor: pointer;
+    }
 }
